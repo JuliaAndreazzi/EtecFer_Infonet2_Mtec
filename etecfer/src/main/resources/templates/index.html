@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema EtecFer</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f4c81,#1b75d0);
+        }
+
+        .container{
+            background:#fff;
+            padding:50px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+            width:380px;
+        }
+
+        h1{
+            color:#0f4c81;
+            margin-bottom:35px;
+            font-size:30px;
+        }
+
+        a{
+            display:block;
+            text-decoration:none;
+            color:white;
+            background:#0f4c81;
+            padding:15px;
+            margin:15px 0;
+            border-radius:8px;
+            font-size:18px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        a:hover{
+            background:#1565c0;
+            transform:scale(1.05);
+            box-shadow:0 8px 15px rgba(0,0,0,.2);
+        }
+
+        p{
+            color:#666;
+            margin-bottom:30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>EtecFer</h1>
+
+        <p>Bem-vindo ao sistema de gerenciamento.</p>
+
+        <a href="/alunos/listar">📚 Gerenciar Alunos</a>
+
+        <a href="/cursos/listar">🎓 Gerenciar Cursos</a>
+
+        <a href="/professores/listar">🎓 Gerenciar Professores</a>
+
+        <a href="/disciplinas/listar">🎓 Gerenciar Disciplinas</a>
+
+    </div>
+
+</body>
+</html>
